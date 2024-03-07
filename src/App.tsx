@@ -12,17 +12,13 @@ function App() {
   };
 
   const createResponse = (message: string) => {
-    if (message.toLowerCase().includes("hello")) {
-      return "Hello there!";
-    } else if (message.toLowerCase().includes("how are you")) {
-      return "I'm doing great, thanks for asking!";
-    } else if (message.toLowerCase().includes("what's your name")) {
-      return "I'm a bot, I don't have a name!";
-    } else if (message.toLowerCase().includes("how old are you")) {
-      return "I'm a bot, I don't have an age!";
-    } else {
-      return "I'm sorry, I don't understand that.";
+    if (message.toLowerCase().includes("hej")) {
+      return "Hej!";
     }
+    if (message.toLowerCase().includes("tack")) {
+      return "Varsågod!";
+    }
+    return "E du go eller?";
   };
 
   return (
