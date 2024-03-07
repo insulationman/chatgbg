@@ -1,5 +1,7 @@
 import { memo, useEffect, useRef } from "react";
 import Typed from "typed.js";
+import ChatGBG from "./assets/ChatGBG.svg";
+import CircleDashed from "./assets/circle-dashed.svg";
 
 interface MessageBoxProps {
   message: string;
@@ -25,9 +27,16 @@ const MessageBox = memo((props: MessageBoxProps) => {
   });
 
   return (
-    <div className="p-4 border-2 border-gray-200 rounded-lg mb-4">
-      <p className="text-xs text-blue-400">{isChatGbg ? "ChatGBG" : "Du"}</p>
-      <span ref={el} />
+    <div className="p-4 border-2 border-gray-200 rounded-lg mb-4 flex gap-2 ">
+      <img
+        src={isChatGbg ? ChatGBG : CircleDashed}
+        alt="chat person icon"
+        className="w-8 h-8 mt-1"
+      />
+      <div>
+        <p className="text-xs text-blue-400">{isChatGbg ? "ChatGBG" : "Du"}</p>
+        <span ref={el} />
+      </div>
     </div>
   );
 });
