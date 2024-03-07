@@ -27,7 +27,7 @@ const MessageBox = memo((props: MessageBoxProps) => {
   });
 
   return (
-    <div className="p-4 border-2 border-gray-200 rounded-lg mb-4 flex gap-2 ">
+    <div className="mb-4 flex gap-2 ">
       <img
         src={isChatGbg ? ChatGBG : CircleDashed}
         alt="chat person icon"
