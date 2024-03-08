@@ -1,9 +1,11 @@
+import ChatGBG from "./assets/ChatGBG.svg";
+
 const ConversationPlaceHolder = () => {
   return (
-    <div>
-      <div className="flex justify-start p-4 border-2 border-gray-200 rounded-lg mb-4">
-        <p>Det finns inga meddelanden än</p>
-      </div>
+    <div className="flex flex-col items-center justify-center h-full">
+      <img src={ChatGBG} alt="chat person icon" className="h-20 mt-1" />
+      <p className="text-xs text-blue-400">ChatGBG</p>
+      <p>Du har ännu inte skrivit något till ChatGBG</p>
     </div>
   );
 };
