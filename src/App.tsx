@@ -24,6 +24,9 @@ function App() {
     if (message.toLowerCase().includes("glenn")) {
       return "Ja, det är jag!";
     }
+    if (message.toLowerCase().includes("göteborg")) {
+      return "Göteborg är bäst!";
+    }
     if (message.toLowerCase().includes("vem")) {
       return "Janne på varvet!";
     }
@@ -46,16 +49,13 @@ function App() {
   const createDefaultResponse = () => {
     //randomize
     const random = Math.floor(Math.random() * 10);
-    if (random < 9) {
-      return "GAIS";
+    if (random < 3) {
+      return "IFK är bäst!";
     }
     if (random < 6) {
-      return "ÖIS";
+      return "Nu ska jag läsa GP!";
     }
-    if (random < 3) {
-      return "IFK";
-    }
-    return "BK Häcken";
+    return "Du är så snabb på tangentbordet!";
   };
 
   return (

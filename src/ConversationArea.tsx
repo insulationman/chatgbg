@@ -9,7 +9,7 @@ const ConversationArea = (props: ConversationAreaProps) => {
   const { messages } = props;
 
   return (
-    <div className="w-full flex flex-col-reverse overflow-x-scroll p-4">
+    <div className="w-full flex flex-col-reverse overflow-x-auto p-4">
       <div className="flex w-full justify-center">
         <div className="w-[50rem] shrink">
           {messages.map((message, index) => (
