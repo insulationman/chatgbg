@@ -24,8 +24,8 @@ function App() {
     if (message.toLowerCase().includes("glenn")) {
       return "Ja, det är jag!";
     }
-    if (message.toLowerCase().endsWith("?")) {
-      return "Ingen j$*!a aning!";
+    if (message.toLowerCase().includes("vem")) {
+      return "Janne på varvet!";
     }
     if (message.toLowerCase().includes("kaffe")) {
       return "Kaffe är gott!";
@@ -36,8 +36,8 @@ function App() {
     if (message.toLowerCase().includes("vin")) {
       return "Vin är gott!";
     }
-    if (message.toLowerCase().includes("vem")) {
-      return "Janne på varvet!";
+    if (message.toLowerCase().endsWith("?")) {
+      return "Ingen aning!";
     }
     //randomize
     return createDefaultResponse();
