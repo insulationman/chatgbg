@@ -55,7 +55,10 @@ function App() {
     if (random < 6) {
       return "Nu ska jag läsa GP!";
     }
-    return "Du är så snabb på tangentbordet!";
+    if (random < 7) {
+      return "Jag gillar Göteborg!";
+    }
+    return "Vad du tjötar!";
   };
 
   return (
